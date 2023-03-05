@@ -38,7 +38,7 @@ function App() {
   const pool = all_champs.filter(s => !blockList[listNum].includes(s))
 
 
-  const volume = { volume: 0.25, interrupt: true }
+  const volume = { volume: 0.15, interrupt: true }
 
 
   //Sound effects
@@ -246,7 +246,7 @@ function Title() {
   )
 }
 
-function RandomCard({ name = 'Pick a Champ!', img = 'http://206.189.181.220:8888/random.png' }) {
+function RandomCard({ name = 'Pick a Champ!', img = 'https://powerinvest.pro/random.png' }) {
   return (
     <div className='random'>
       <img id='randomPic' src={img} alt={name} style={{
@@ -270,7 +270,7 @@ function ChunkArray(arr, chunkSize) {
 function makeChamp(champ) {
   return {
     name: champ,
-    img: 'http://206.189.181.220:8888/' + champ.toLowerCase() + '.png'
+    img: 'https://powerinvest.pro/' + champ.toLowerCase() + '.png'
   }
 }
 
